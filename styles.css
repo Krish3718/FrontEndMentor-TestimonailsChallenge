@@ -1,0 +1,176 @@
+html {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Karla", sans-serif;
+  font-size: 13px;
+}
+
+* {
+  margin: 0;
+}
+
+img {
+  border-radius: 50%;
+  width: 35px;
+  border: 1px solid #7541c8;
+  z-index: 2;
+  position: relative;
+}
+
+body {
+  background-color: #ecf2f8;
+}
+
+.main-container {
+  padding: 20px;
+  margin: auto;
+}
+.intro-content {
+  display: flex;
+  align-items: center;
+  line-height: 16px;
+  margin-bottom: 20px;
+  z-index: 2;
+}
+
+.intro {
+  margin-left: 20px;
+}
+
+.first,
+.second,
+.third,
+.fourth,
+.right-flex {
+  border-radius: 5px;
+  padding: 30px;
+  box-shadow: 10px 4px 24px -10px rgba(0, 0, 0, 0.43);
+}
+
+.grid-item {
+  margin-bottom: 25px;
+}
+
+.background-quote {
+  position: absolute;
+  right: 5%;
+  top: 0%;
+  width: 120px;
+  z-index: 1;
+}
+
+.first {
+  position: relative;
+  background-color: hsl(263, 55%, 52%);
+  color: hsl(0, 0%, 81%);
+  margin-top: 60px;
+  z-index: 0;
+}
+
+.second {
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(0, 0%, 81%);
+}
+
+.third {
+  background-color: hsl(0, 0%, 100%);
+  color: black;
+}
+
+.fourth {
+  background-color: hsl(219, 29%, 14%);
+  color: hsl(0, 0%, 81%);
+}
+
+.right-flex {
+  background-color: hsl(0, 0%, 100%);
+  color: black;
+  margin-bottom: 60px;
+}
+
+.names {
+  font-size: 1.1rem;
+  z-index: 2;
+  position: relative;
+}
+
+.occupation {
+  font-size: 0.95rem;
+  opacity: 50%;
+  z-index: 2;
+  position: relative;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  z-index: 2;
+  position: relative;
+}
+
+.content {
+  opacity: 70%;
+}
+
+@media (min-width: 576px) {
+  .grid-item {
+    margin-bottom: 0px;
+  }
+  .right-flex {
+    margin-bottom: 0px;
+  }
+  .first {
+    margin-top: 0px;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    padding: 100px;
+  }
+
+  .background-quote {
+    right: 15%;
+    width: 100px;
+  }
+  .left-flex {
+    flex-basis: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+
+  .right-flex {
+    flex-basis: 20%;
+  }
+
+  .left-flex-top {
+    flex-basis: 50%;
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .left-flex-bottom {
+    flex-basis: 50%;
+    display: flex;
+  }
+
+  .first {
+    flex-basis: 70%;
+    margin-right: 20px;
+  }
+
+  .second {
+    flex-basis: 30%;
+  }
+
+  .third {
+    flex-basis: 30%;
+    margin-right: 20px;
+  }
+
+  .fourth {
+    flex-basis: 70%;
+  }
+}
